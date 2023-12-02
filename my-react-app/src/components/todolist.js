@@ -31,13 +31,13 @@ const Todolist = ({ todo, setTodo, setEditTodo }) => {
                     <input type="text" value={todos.title} className="list" onChange={change} />
                     <div>
                         <button className="button-complete task-button" onClick={() => handleComplete(todos)}>
-                            <i className="fa fa-check-circle"></i>
+                            complete<i className="fa fa-check-circle"></i>
                         </button>
                         <button className="button-edit task-button" onClick={() => handleEdit(todos)}>
-                            <i className="fa fa-edit"></i>
+                            edit<i className="fa fa-edit"></i>
                         </button>
                         <button className="button-delete task-button" onClick={() => handleDelete(todos)}>
-                            <i className="fa fa-trash"></i>
+                            delete<i className="fa fa-trash"></i>
                         </button>
                     </div>
                 </li>
